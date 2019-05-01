@@ -52,3 +52,4 @@ $ export BUILDARCH=arm-linux-gnueabihf
 $ make
 $ make install
 ```
+Скомпилированный проект должен появиться в директории `$HOME/PythonSrc/PythonTarget/`
