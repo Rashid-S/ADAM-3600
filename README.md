@@ -8,5 +8,9 @@
 $ sudo apt-get install update
 $ sudo apt-get install upgrade
 ```
-
+Инсталлировать следующие библиотеки
+```
+$ sudo apt-get install libssl-dev
+$ sudo apt-get install libffi-dev
+```
 
