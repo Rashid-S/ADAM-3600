@@ -12,5 +12,19 @@ $ sudo apt-get install upgrade
 ```
 $ sudo apt-get install libssl-dev
 $ sudo apt-get install libffi-dev
+$ sudo apt-get install gcc-arm-linux-gnueabihf
 ```
-
+## Кросс-компиляция и сборка
+Выполнить последовательно команды
+```
+$ cd $HOME
+$ mkdir PythonSrc
+$ cd PythonSrc
+$ wget https://www.python.org/ftp/python/3.5.5/Python-3.5.5.tgz
+$ tar zxf Python-3.5.5.tgz
+$ mv Python-3.5.5 Python-3.5.5-host
+$ cd Python-3.5.5-host
+$ ./configure --prefix=$HOME/PythonSrc/PythonHost
+$ make python Parser/pgen
+$ make install
+```
