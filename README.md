@@ -54,5 +54,21 @@ $ make install
 ```
 Скомпилированный проект должен появиться в директории `$HOME/PythonSrc/PythonTarget/`
 ## Запуск интерпретатора на Adam-3600
-### В директории `$HOME/PythonSrc/PythonTarget/` размещены четыре каталога - `/bin, /include, /lib, /share`. Я скопировал содержимое каждой директории в одноименные директории на PLC - `/usr/bin, /usr/include, /usr/lib, /usr/share` соотвественно.
+В директории `$HOME/PythonSrc/PythonTarget/` размещены четыре каталога - `/bin, /include, /lib, /share`. Я скопировал содержимое каждой директории в одноименные директории на PLC - `/usr/bin, /usr/include, /usr/lib, /usr/share` соотвественно.
 
+Войти в директорий `/usr/bin`. Выполнить в командной строке
+```
+chmod +x python3.5
+```
+Далее
+```
+python3.5
+```
+В ответ в командной строке должно появиться приглашение интерпретатора
+```
+Python 3.5.5 (default, Apr 28 2019, 20:19:45)
+[GCC 4.6.3] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>>
+
+```
