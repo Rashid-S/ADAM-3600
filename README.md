@@ -54,4 +54,5 @@ $ make install
 ```
 Скомпилированный проект должен появиться в директории `$HOME/PythonSrc/PythonTarget/`
 ## Запуск интерпретатора на Adam-3600
-В директории `$HOME/PythonSrc/PythonTarget/` размещены четыре каталога - `/bin, /include, /lib, /share`. Я скопировал содержимое каждой директории в одноименные директории на PLC - `/usr/bin, /usr/include, /usr/lib, /usr/share` соотвественно.
+### В директории `$HOME/PythonSrc/PythonTarget/` размещены четыре каталога - `/bin, /include, /lib, /share`. Я скопировал содержимое каждой директории в одноименные директории на PLC - `/usr/bin, /usr/include, /usr/lib, /usr/share` соотвественно.
+
