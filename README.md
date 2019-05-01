@@ -28,3 +28,27 @@ $ ./configure --prefix=$HOME/PythonSrc/PythonHost
 $ make python Parser/pgen
 $ make install
 ```
+```
+$ cd $HOME
+$ wget https://www.python.org/ftp/python/3.5.5/Python-3.5.5.tgz
+$ tar zxf Python-3.5.5.tgz
+$ cd Python-3.5.5
+$ export CC=arm-linux-gnueabihf-gcc
+$ export CXX=arm-linux-gnueabihf-g++
+$ export AR=arm-linux-gnueabihf-ar
+$ export RANLIB=arm-linux-gnueabihf-ranlib
+$ export ac_cv_file__dev_ptmx=no
+$ export ac_cv_file__dev_ptc=no
+$ export ac_cv_have_long_long_format=yes
+$ export PATH=/home/USER/PythonSrc/PythonHost/bin:$PATH
+$ ./configure --host=arm-linux-gnueabihf --target=arm-linux-gnueabihf --build=x86_64-linux-gnu --prefix=$HOME/PythonSrc/PythonTarget --disable-ipv6 --enable-shared
+$ export HOSTPYTHON=$HOME/PythonSrc/Python-3.5.5-host/python3
+$ export HOSTPGEN=$HOME/Python-3.5.5-host/Parser/pgen
+$ export BLDSHARED="arm-linux-gnueabihf-gcc -shared"
+$ export CROSS_COMPILE=arm-linux-gnueabihf-
+$ export CROSS_COMPILE_TARGET=yes
+$ export HOSTARCH=arm-linux
+$ export BUILDARCH=arm-linux-gnueabihf
+$ make
+$ make install
+```
