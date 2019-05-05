@@ -13,7 +13,10 @@ $ sudo apt-get install upgrade
 $ sudo apt-get install libssl-dev
 $ sudo apt-get install libffi-dev
 $ sudo apt-get install gcc-arm-linux-gnueabihf
+$ sudo apt-get install dff
+$ reboot
 ```
+Проверить версию arm-linux-gnueabihf-gcc командой `arm-linux-gnueabihf-gcc --version`. Версия должна быть 4.6.3.
 ## Кросс-компиляция и сборка
 Выполнить последовательно команды
 ```
